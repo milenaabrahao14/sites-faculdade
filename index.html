@@ -1,89 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vincent van Gogh - Biografia</title>
-  <style>
-    body {
-      font-family: "Segoe UI", sans-serif;
-      background-color: #0d1b2a;
-      color: #f9f7f3;
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Repositório de Sites</title>
+    <style>
+        /* Estilos CSS para a estética Black */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212; /* Fundo preto/muito escuro */
+            color: #E0E0E0; /* Texto claro/cinza claro */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
 
-    header {
-      background-color: #1b263b;
-      color: #f4d35e;
-      text-align: center;
-      padding: 1.5rem;
-      font-size: 2rem;
-      font-weight: bold;
-    }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            padding: 40px;
+            background-color: #1E1E1E; /* Um pouco mais claro que o fundo para contraste */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra suave */
+        }
 
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background-color: #1e3d59;
-      border-radius: 15px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.3);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+        h1 {
+            color: #BB86FC; /* Cor de destaque (roxo elegante) */
+            margin-bottom: 30px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
 
-    img {
-      width: 250px;
-      border-radius: 15px;
-      border: 3px solid #f4d35e;
-      margin-bottom: 1.5rem;
-    }
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Botões responsivos */
+            gap: 20px;
+            margin-top: 30px;
+        }
 
-    p {
-      text-align: justify;
-      line-height: 1.6;
-      font-size: 1.1rem;
-    }
+        .site-button {
+            display: block;
+            padding: 15px 20px;
+            background-color: #333333; /* Fundo do botão mais escuro */
+            color: #E0E0E0;
+            text-decoration: none;
+            border: 1px solid #444444;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s, border-color 0.3s;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
 
-    .botao {
-      background-color: #f4d35e;
-      color: #1b263b;
-      padding: 10px 20px;
-      margin-top: 2rem;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      text-decoration: none;
-      font-weight: bold;
-    }
+        .site-button:hover {
+            background-color: #BB86FC; /* Cor de destaque ao passar o mouse */
+            color: #121212; /* Texto escuro no hover */
+            border-color: #BB86FC;
+            transform: translateY(-3px); /* Efeito de elevação sutil */
+            box-shadow: 0 4px 15px rgba(187, 134, 252, 0.4);
+        }
 
-    .botao:hover {
-      background-color: #f5c518;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #1b263b;
-      color: #f9f7f3;
-    }
-  </style>
+        /* Estilo para rodapé ou informações adicionais */
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #666666;
+        }
+    </style>
 </head>
 <body>
-  <header>🌌 Vincent van Gogh – Biografia 🌻</header>
 
-  <main>
-    <img src="vangogh.jpg" alt="Vincent van Gogh">
-    
-    <p>
-      Vincent Willem van Gogh nasceu em 30 de março de 1853, na Holanda. Foi um dos artistas mais influentes da arte ocidental, conhecido por suas cores vibrantes, pinceladas intensas e emoção profunda. 
-      Apesar de sua genialidade, teve uma vida marcada por dificuldades financeiras e emocionais. Em apenas dez anos, produziu mais de duas mil obras, incluindo algumas das mais reconhecidas da história, 
-      como <em>A Noite Estrelada</em>, <em>Os Girassóis</em> e <em>O Quarto em Arles</em>. Van Gogh faleceu em 1890, deixando um legado artístico eterno.
-    </p>
+    <div class="container">
+        <h1>Repositório de Atividades - Links dos Sites</h1>
 
-    <a href="obras.html" class="botao">Ver Obras →</a>
-  </main>
+        <p>Utilize os botões abaixo para acessar os 7 sites/páginas desenvolvidos na disciplina.</p>
+
+        <div class="button-grid">
+            <a href="pasta1/" class="site-button">
+                &#9733; 1ª Página Web
+            </a>
+
+            <a href="pasta2/" class="site-button">
+                &#9733; 2ª Página Web
+            </a>
+
+            <a href="pasta3/" class="site-button">
+                &#9733; 3ª Página Web
+            </a>
+
+            <a href="pasta4/" class="site-button">
+                &#9733; 4ª Página Web
+            </a>
+
+            <a href="pasta5/" class="site-button">
+                &#9733; 5ª Página Web
+            </a>
+
+            <a href="pasta6/" class="site-button">
+                &#9733; 6ª Página Web
+            </a>
+
+            <a href="pasta7/" class="site-button">
+                &#9733; 7ª Página Web
+            </a>
+        </div>
+
+        
+
 </body>
 </html>
