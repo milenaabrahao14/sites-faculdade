@@ -1,124 +1,168 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial - Repositório de Sites</title>
+    <title>CINENOW - Em Cartaz</title>
+
     <style>
-        /* Estilos CSS para a estética Black */
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #121212; /* Fundo preto/muito escuro */
-            color: #E0E0E0; /* Texto claro/cinza claro */
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+        }
+
+        header {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #e50914;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        
+        .banner {
+            background-color: #111;
+            padding: 40px;
+            margin: 20px;
+            border: 1px solid #444;
+            text-align: center;
+            position: relative;
+        }
+
+        
+        .float-box {
+            width: 180px;
+            height: 110px;
+            background: #222;
+            margin: 20px;
+            border-radius: 8px;
+            float: left;
+            padding: 10px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        
+        .filme-container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .card {
+            width: 250px;
+            background-color: #111;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 0 10px rgba(255,255,255,0.15);
+            padding-bottom: 15px;
             text-align: center;
         }
 
-        .container {
+        .card img {
+            width: 100%;
+        }
+
+        .buy {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e50914;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
             width: 90%;
-            max-width: 800px;
-            padding: 40px;
-            background-color: #1E1E1E; /* Um pouco mais claro que o fundo para contraste */
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra suave */
         }
 
-        h1 {
-            color: #BB86FC; /* Cor de destaque (roxo elegante) */
-            margin-bottom: 30px;
-            font-weight: 300;
-            letter-spacing: 2px;
+        .buy:hover {
+            background-color: #b00610;
         }
 
-        .button-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Botões responsivos */
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .site-button {
-            display: block;
-            padding: 15px 20px;
-            background-color: #333333; /* Fundo do botão mais escuro */
-            color: #E0E0E0;
-            text-decoration: none;
-            border: 1px solid #444444;
-            border-radius: 8px;
-            font-size: 16px;
+        
+        .botao-contato {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #fff;
+            color: #000;
+            padding: 10px 18px;
             font-weight: bold;
-            transition: background-color 0.3s, transform 0.3s, border-color 0.3s;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
-        .site-button:hover {
-            background-color: #BB86FC; /* Cor de destaque ao passar o mouse */
-            color: #121212; /* Texto escuro no hover */
-            border-color: #BB86FC;
-            transform: translateY(-3px); /* Efeito de elevação sutil */
-            box-shadow: 0 4px 15px rgba(187, 134, 252, 0.4);
-        }
-
-        /* Estilo para rodapé ou informações adicionais */
-        .footer {
-            margin-top: 40px;
-            font-size: 14px;
-            color: #666666;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Repositório de Atividades - Links dos Sites</h1>
+<header>
+    <h1>CINENOW</h1>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="explicação.html">Explicação dos Posicionamentos</a>
+    </nav>
+</header>
 
-        <p>Utilize os botões abaixo para acessar os 7 sites/páginas desenvolvidos na disciplina.</p>
+<div class="banner">
+    <h2>Filmes em Cartaz</h2>
+</div>
 
-        <div class="button-grid">
-            <a href="pasta1/" class="site-button">
-                &#9733; 1ª Página Web
-            </a>
 
-            <a href="pasta2/" class="site-button">
-                &#9733; 2ª Página Web
-            </a>
 
-            <a href="pasta3/" class="site-button">
-                &#9733; 3ª Página Web
-            </a>
+<section class="filme-container">
 
-            <a href="pasta4/" class="site-button">
-                &#9733; 4ª Página Web
-            </a>
+    <div class="card">
+        <h2>Filme 1</h2>
+        <img src="viagem2.jpg" alt="Filme 1">
+        <p>Ação, aventura e muita emoção.</p>
+        <button class="buy">Comprar Ingresso</button>
+    </div>
 
-            <a href="pasta5/" class="site-button">
-                &#9733; 5ª Página Web
-            </a>
+    <div class="card">
+        <h2>Filme 2</h2>
+        <img src="lugarsilencioso.jpg" alt="Filme 2">
+        <p>Uma história cheia de mistérios.</p>
+        <button class="buy">Comprar Ingresso</button>
+    </div>
 
-            <a href="pasta6/" class="site-button">
-                &#9733; 6ª Página Web
-            </a>
+    <div class="card">
+        <h2>Filme 3</h2>
+        <img src="juntos e misturados.jpg" alt="Filme 3">
+        <p>Comédia divertida para toda a família.</p>
+        <button class="buy">Comprar Ingresso</button>
+    </div>
 
-            <a href="pasta7/" class="site-button">
-                &#9733; 7ª Página Web
-            </a>
-            <a href="pasta8/" class="site-button">
-                &#9733; 8ª Página Web
-            <a href="pasta9/" class="site-button">
-                &#9733; 9ª Página Web
-            </a>
-        </div>
+    <div class="card">
+        <h2>Filme 4</h2>
+        <img src="ilha do medo.jpg" alt="Filme 4">
+        <p>Suspense cheio de reviravoltas.</p>
+        <button class="buy">Comprar Ingresso</button>
+    </div>
 
-        
+</section>
+
+<a class="botao-contato" href="#">Contato</a>
 
 </body>
-
 </html>
-
-
